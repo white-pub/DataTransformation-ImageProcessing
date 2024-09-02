@@ -1,0 +1,36 @@
+Downloaded python from their website, installed it.
+    used the standard installation “Install Now” and checked the boxes for “Add Python to PATH…”, and “Install as administrator…”
+
+Went to cmd:
+    pip install virtualenv
+
+Decided to set up my project with GitHub.
+=>Created a New Repository on GitHub
+=>Clone the Repository Using GitHub Desktop
+        stored the project on my local machine under C:\Users\...\class name
+
+=>Navigated to the directory where my repository was clone
+        cd path_name
+=>Create a Virtual Environment named venv
+        python -m venv venv
+=>Activate the virtual environment (on Windows)
+        venv\Scripts\activate
+        see the (venv) in cmd
+
+=>Install Dependencies
+        pip install jupyterlab
+=>Save the installed packages to a requirements.txt file
+        pip freeze > requirements.txt
+        🐦It's a good practice for future reference! 
+        Also easy: After installing the packages, generate the requirements.txt file by running "pip freeze > requirements.txt"
+        🦄How to use this file in the future to set up the same environment (by chatGPT)
+        1. Clone the Project:
+        Clone the repository from GitHub (as you did earlier).
+        2. Create and Activate a Virtual Environment:
+        Create and activate a virtual environment in the project directory.
+        3.Install the Dependencies:
+        Use the requirements.txt file to install all the necessary packages:
+        ----
+        pip install -r requirements.txt
+        ----
+        This command installs all the packages listed in the requirements.txt file with the specified versions.
