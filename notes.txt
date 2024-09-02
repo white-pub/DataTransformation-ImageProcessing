@@ -34,3 +34,21 @@ Decided to set up my project with GitHub.
         pip install -r requirements.txt
         ----
         This command installs all the packages listed in the requirements.txt file with the specified versions.
+
+=>Make Initial Commit:
+    back to GitHub Desktop, check the changes made (e.g., the virtual environment folder, requirements.txt, etc.).
+    Add a commit message like "Initial commit with project setup".
+    🐦Click Commit to main.
+=>Push the Changes to GitHub:
+    After committing changes, 🐦click on "Push origin" in the top toolbar of GitHub Desktop to upload changes to GitHub.
+
+
+!!! Generally not advisable to share the env folder
+=>In project directory, create a file named .gitignore.
+        🦄On windows, can stay in virtual environment and type
+        echo. > .gitignore
+=>Open the .gitignore file in any text editor (e.g., Notepad, VS Code) and add the paths or patterns you want to ignore.
+        In this case, just add 
+        venv/
+        in side the file (or whatever_vertual_envirment_name/ )
+
