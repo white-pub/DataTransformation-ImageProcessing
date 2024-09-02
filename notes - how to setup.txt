@@ -50,5 +50,36 @@ Decided to set up my project with GitHub.
 =>Open the .gitignore file in any text editor (e.g., Notepad, VS Code) and add the paths or patterns you want to ignore.
         In this case, just add 
         venv/
-        in side the file (or whatever_vertual_envirment_name/ )
+        inside the file (or whatever_vertual_envirment_name/ )
+        save the file, commit to git, push to origin
+
+🦄If the venv/ directory was previously tracked by Git (appeared in GitHub Desktop before), need to remove it from tracking manually:
+    (can stay in virtual environment) Type the following line to Clear Cached Files
+    git rm -r --cached venv/
+    Then commit this change, and it should no longer appear. (can verify from github webpage)
+
+🐦🐦🐦The virtual environment doesn't interfere with file operations like creating or editing files, so you can manage your project files without deactivating it.
+
+
+🦄to deactivate the virtual environment, just type in
+        ----
+        deactivate
+        ----
+
+🍧🍧🍧🍧🍧🍧🍧
+Because Jupyter Lab is installed in the venv, first be in the venv - should be a (venv) in start of line in cmd
+
+=> Open the Jupyter Lab environment.
+        Execute the command “jupyter-lab” in cmd (in venv). 
+                Should open up a browser window with the Jupyter Lab interface.
+=> Creating a New Notebook
+        Click on the + button in the file browser panel or the File menu at the top and selecting New > Notebook.
+        Choose the Python kernel (e.g., Python 3) for your new notebook.
+=>  Install data science python libraries as needed. For this class, we need the following to start. Do one line at a time to avoid error.
+        ----
+        pip install pandas
+        pip install scikit-learn
+        ----
+        Might take a few minute each to install.
+        🦄 If the [] befor the cell is [*], it means its still executing.
 
