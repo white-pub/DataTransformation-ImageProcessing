@@ -1,7 +1,7 @@
-Downloaded python from their website, installed it.
+Download python from their website, install it.
     used the standard installation “Install Now” and checked the boxes for “Add Python to PATH…”, and “Install as administrator…”
 
-Went to cmd:
+Go to cmd:
     pip install virtualenv
 
 Decided to set up my project with GitHub.
@@ -9,7 +9,7 @@ Decided to set up my project with GitHub.
 =>Clone the Repository Using GitHub Desktop
         stored the project on my local machine under C:\Users\...\class name
 
-=>Navigated to the directory where my repository was clone
+=>Navigate to the directory where my repository was clone
         cd path_name
 =>Create a Virtual Environment named venv
         python -m venv venv
