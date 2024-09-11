@@ -4,8 +4,8 @@ Download python from their website, install it.
 Go to cmd:
     pip install virtualenv
 
-Decided to set up my project with GitHub.
-=>Created a New Repository on GitHub
+I to set up my project with GitHub.
+=>Create a New Repository on GitHub
 =>Clone the Repository Using GitHub Desktop
         stored the project on my local machine under C:\Users\...\class name
 
@@ -83,3 +83,9 @@ Because Jupyter Lab is installed in the venv, first be in the venv - should be a
         Might take a few minute each to install.
         🦄 If the [] befor the cell is [*], it means its still executing.
 
+--------------------
+filter the dataframe is so helpful and important!!!!!
+普通
+sns.pairplot(df, hue = 'species')
+只要留Gentoo
+sns.pairplot(df[ df['species'] == 'Gentoo'], hue = 'species') 
