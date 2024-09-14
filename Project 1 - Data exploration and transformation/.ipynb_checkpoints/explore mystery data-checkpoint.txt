@@ -1,0 +1,30 @@
+Preparation: I unzipped the mystery data into the same file as where I store my project file. Next to the venv folder and requirment.txt file so that Jupyter Notebook could access the files.
+
+
+Since there are five parts, I need to first determine if they represent different parts of a single data set or entirely separate datasets.
+
+
+I start by inspecting each .data file separately.
+
+I load each file and then compare structures:
+
+   Check if the files have the same number of columns and similar data types.
+
+   Compare the first few rows of each file using "print(dataframe_name.head())".
+
+   Use "dataframe_name.info()" to see if the column names (if any) or data types are consistent across files.
+
+
+=>They seem to belong to the same set of data with the same datatype (int64, all numeric) and same number of rows (4). The number of columns ranges from 500 to 1156.
+
+
+So I put the dataset together with "pd.concat([df1, df2, df3, df4, df5], ignore_index=True)". This method produced weird results with [5 rows x 1156 columns] and a bunch of NaN.
+
+
+It turned out that I was not reading the results correctly. What I thought was only 5 rows was actually because I used the "head" function which only shows limited rows. 
+
+
+I then inspected the shape with print(dfX.shape) for the df1 to df5. I discovered that they each have roughly the same number of columns and rows. Ranging from (500, 500) to (1472, 1156). 
+
+
+They still might be different aspects of the same data set, but I'm not sure how to continue.
