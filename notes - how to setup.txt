@@ -14,7 +14,9 @@ I to set up my project with GitHub.
 =>Create a Virtual Environment named venv
         python -m venv venv
 =>Activate the virtual environment (on Windows)
+    🎀-----------------------🎀
         venv\Scripts\activate
+    🎀-----------------------🎀
         see the (venv) in cmd
 
 =>Install Dependencies
