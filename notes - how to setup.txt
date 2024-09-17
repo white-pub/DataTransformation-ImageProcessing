@@ -66,6 +66,8 @@ I to set up my project with GitHub.
 🦄to deactivate the virtual environment, just type in
         ----
         deactivate
+        or
+        venv\Scripts\deactivate
         ----
 
 🍧🍧🍧🍧🍧🍧🍧
@@ -86,8 +88,3 @@ Because Jupyter Lab is installed in the venv, first be in the venv - should be a
         🦄 If the [] befor the cell is [*], it means its still executing.
 
 --------------------
-filter the dataframe is so helpful and important!!!!!
-普通
-sns.pairplot(df, hue = 'species')
-只要留Gentoo
-sns.pairplot(df[ df['species'] == 'Gentoo'], hue = 'species') 
