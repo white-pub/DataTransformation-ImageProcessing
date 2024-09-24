@@ -4,12 +4,12 @@ Download python from their website, install it.
 Go to cmd:
     pip install virtualenv
 
-I to set up my project with GitHub.
+I set up my project with GitHub.
 =>Create a New Repository on GitHub
 =>Clone the Repository Using GitHub Desktop
-        stored the project on my local machine under C:\Users\...\class name
+        stored the project on my local machine under C:\Users\...\Github\project_name
 
-=>Navigate to the directory where my repository was clone
+=>Navigate to the directory where the repository was clone
         cd path_name
 =>Create a Virtual Environment named venv
         python -m venv venv
@@ -20,18 +20,18 @@ I to set up my project with GitHub.
         see the (venv) in cmd
 
 =>Install Dependencies
+
+1) manually
         pip install jupyterlab
-=>Save the installed packages to a requirements.txt file
-        pip freeze > requirements.txt
-        🐦It's a good practice for future reference! 
-        Also easy: After installing the packages, generate the requirements.txt file by running "pip freeze > requirements.txt"
-        🦄How to use this file in the future to set up the same environment (by chatGPT)
-        1. Clone the Project:
-        Clone the repository from GitHub (as you did earlier).
-        2. Create and Activate a Virtual Environment:
-        Create and activate a virtual environment in the project directory.
-        3.Install the Dependencies:
-        Use the requirements.txt file to install all the necessary packages:
+        pip install pandas
+        pip install scikit-learn
+        pip install Matplotlib
+        pip install seaborn
+
+
+2) Use the requirements.txt file 
+        
+        To install all the necessary packages:
         ----
         pip install -r requirements.txt
         ----
@@ -55,12 +55,7 @@ I to set up my project with GitHub.
         inside the file (or whatever_vertual_envirment_name/ )
         save the file, commit to git, push to origin
 
-🦄If the venv/ directory was previously tracked by Git (appeared in GitHub Desktop before), need to remove it from tracking manually:
-    (can stay in virtual environment) Type the following line to Clear Cached Files
-    git rm -r --cached venv/
-    Then commit this change, and it should no longer appear. (can verify from github webpage)
 
-🐦🐦🐦The virtual environment doesn't interfere with file operations like creating or editing files, so you can manage your project files without deactivating it.
 
 
 🦄to deactivate the virtual environment, just type in
@@ -79,12 +74,3 @@ Because Jupyter Lab is installed in the venv, first be in the venv - should be a
 => Creating a New Notebook
         Click on the + button in the file browser panel or the File menu at the top and selecting New > Notebook.
         Choose the Python kernel (e.g., Python 3) for your new notebook.
-=>  Install data science python libraries as needed. For this class, we need the following to start. Do one line at a time to avoid error.
-        ----
-        pip install pandas
-        pip install scikit-learn
-        ----
-        Might take a few minute each to install.
-        🦄 If the [] befor the cell is [*], it means its still executing.
-
---------------------
